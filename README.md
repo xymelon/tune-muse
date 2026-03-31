@@ -1,6 +1,6 @@
 # TuneMuse 🎵
 
-> 💡 **Note**: This project is implemented using the [spec-kit](https://github.com/github/spec-kit) standard process.
+> 💡 **Note**: This project is implemented using the [spec-kit](https://github.com/github/spec-kit) standard process. For comparison, you can check out [tune-muse-assgin](https://github.com/xymelon/tune-muse-assgin), which is implemented using spec-kit extension feature.
 
 ![TuneMuse App](./home.png)
 
