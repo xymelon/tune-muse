@@ -1,0 +1,962 @@
+[
+  {
+    "id": "classic_ballad",
+    "genre": "Ballad",
+    "sub_style": "Classic Ballad",
+    "tempo_range": {"low": 60, "high": 85},
+    "key_range": {"low": "Bb2", "high": "F4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.5},
+      "energy": {"low": 0.1, "high": 0.4},
+      "tension": {"low": 0.3, "high": 0.7}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.6, "high": 1.0},
+      "brightness": {"low": 0.1, "high": 0.5},
+      "breathiness": {"low": 0.3, "high": 0.8}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["vibrato", "legato", "dynamic_range"],
+    "description": "Emotional, slow-tempo songs with sustained vocal lines emphasizing tonal richness",
+    "example_songs": ["Someone Like You – Adele", "Yesterday – The Beatles", "月半小夜曲 – 李克勤"],
+    "explanation_templates": [
+      "Your warm timbre (warmth: {warmth:.0%}) and comfortable range ({pitch_low}–{pitch_high}) align well with ballad vocals that emphasize tonal richness over agility.",
+      "The gentle vibrato and legato phrasing in your voice suit sustained melodic lines typical of ballads at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "power_ballad",
+    "genre": "Ballad",
+    "sub_style": "Power Ballad",
+    "tempo_range": {"low": 65, "high": 90},
+    "key_range": {"low": "A2", "high": "A4"},
+    "vocal_difficulty": 4,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.4, "high": 0.8},
+      "tension": {"low": 0.5, "high": 0.9}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.5, "high": 0.9},
+      "breathiness": {"low": 0.0, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.6,
+      "syncopation_range": {"low": 0.0, "high": 0.2}
+    },
+    "expression_traits": ["belting", "dynamic_range", "vibrato", "crescendo"],
+    "description": "Emotionally intense ballads that build to powerful, belted climaxes requiring strong projection",
+    "example_songs": ["I Will Always Love You – Whitney Houston", "Total Eclipse of the Heart – Bonnie Tyler", "死了都要爱 – 信乐团"],
+    "explanation_templates": [
+      "Your brightness ({brightness:.0%}) and wide range ({pitch_low}–{pitch_high}) give you the projection needed for power ballad climaxes.",
+      "The {mood_label} intensity in your delivery pairs naturally with power ballads that build from soft verses to explosive choruses at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "jazz_ballad",
+    "genre": "Ballad",
+    "sub_style": "Jazz Ballad",
+    "tempo_range": {"low": 55, "high": 80},
+    "key_range": {"low": "Bb2", "high": "Eb4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.5},
+      "energy": {"low": 0.1, "high": 0.3},
+      "tension": {"low": 0.2, "high": 0.6}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.7, "high": 1.0},
+      "brightness": {"low": 0.1, "high": 0.4},
+      "breathiness": {"low": 0.4, "high": 0.9}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.3,
+      "syncopation_range": {"low": 0.2, "high": 0.6}
+    },
+    "expression_traits": ["vibrato", "legato", "rubato", "subtle_dynamics"],
+    "description": "Intimate, slow jazz pieces with sophisticated harmony and rubato phrasing",
+    "example_songs": ["My Funny Valentine – Chet Baker", "Misty – Ella Fitzgerald", "如果没有你 – 莫文蔚"],
+    "explanation_templates": [
+      "Your warm, breathy timbre (warmth: {warmth:.0%}, breathiness: {breathiness:.0%}) is ideal for the intimate phrasing of jazz ballads.",
+      "The relaxed rhythmic flexibility in your singing suits the rubato feel of jazz ballads at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "synth_pop",
+    "genre": "Pop",
+    "sub_style": "Synth Pop",
+    "tempo_range": {"low": 110, "high": 135},
+    "key_range": {"low": "C3", "high": "G4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.8},
+      "energy": {"low": 0.5, "high": 0.8},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.2, "high": 0.6},
+      "brightness": {"low": 0.5, "high": 0.9},
+      "breathiness": {"low": 0.1, "high": 0.5}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.7,
+      "syncopation_range": {"low": 0.1, "high": 0.4}
+    },
+    "expression_traits": ["precision", "rhythmic_consistency", "clean_tone"],
+    "description": "Bright, electronic-driven pop with clean vocal delivery and catchy melodic hooks",
+    "example_songs": ["Blinding Lights – The Weeknd", "Running Up That Hill – Kate Bush", "说爱你 – 蔡依林"],
+    "explanation_templates": [
+      "Your bright timbre (brightness: {brightness:.0%}) and clean delivery fit synth pop's need for crisp vocals that cut through electronic production.",
+      "The {mood_label} energy in your voice pairs well with synth pop's driving rhythms at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "dance_pop",
+    "genre": "Pop",
+    "sub_style": "Dance Pop",
+    "tempo_range": {"low": 115, "high": 135},
+    "key_range": {"low": "C3", "high": "A4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.6, "high": 1.0},
+      "energy": {"low": 0.7, "high": 1.0},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.2, "high": 0.5},
+      "brightness": {"low": 0.6, "high": 1.0},
+      "breathiness": {"low": 0.0, "high": 0.3}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.8,
+      "syncopation_range": {"low": 0.2, "high": 0.5}
+    },
+    "expression_traits": ["projection", "rhythmic_precision", "energy", "stamina"],
+    "description": "High-energy pop designed for dancing, demanding strong rhythmic delivery and bright projection",
+    "example_songs": ["Don't Start Now – Dua Lipa", "Bad Guy – Billie Eilish", "舞娘 – 蔡依林"],
+    "explanation_templates": [
+      "Your bright, projecting voice (brightness: {brightness:.0%}) and rhythmic precision are ideal for dance pop's energetic delivery.",
+      "The high energy in your vocal profile matches dance pop's demand for stamina and clear delivery at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "indie_pop",
+    "genre": "Pop",
+    "sub_style": "Indie Pop",
+    "tempo_range": {"low": 100, "high": 130},
+    "key_range": {"low": "B2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.3, "high": 0.6},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.3, "high": 0.7},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.3, "high": 0.8}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.1, "high": 0.4}
+    },
+    "expression_traits": ["intimacy", "breathiness", "natural_tone", "understated_dynamics"],
+    "description": "Lo-fi, intimate pop with understated vocals and a natural, unpolished aesthetic",
+    "example_songs": ["Electric Love – BØRNS", "Sweater Weather – The Neighborhood", "我好想你 – 苏打绿"],
+    "explanation_templates": [
+      "Your breathy, natural tone (breathiness: {breathiness:.0%}) captures the intimate, unpolished quality that defines indie pop.",
+      "The understated dynamics in your voice suit indie pop's relaxed feel at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "acoustic_pop",
+    "genre": "Pop",
+    "sub_style": "Acoustic Pop",
+    "tempo_range": {"low": 85, "high": 120},
+    "key_range": {"low": "A2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.8},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.1, "high": 0.3}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["natural_tone", "warmth", "gentle_dynamics", "conversational"],
+    "description": "Warm, guitar-driven pop with a natural vocal tone that feels conversational and inviting",
+    "example_songs": ["Perfect – Ed Sheeran", "Ours – Taylor Swift", "小幸运 – 田馥甄"],
+    "explanation_templates": [
+      "Your warm, natural timbre (warmth: {warmth:.0%}) is a great fit for acoustic pop that relies on genuine vocal connection over production.",
+      "The conversational quality in your singing pairs beautifully with acoustic pop's stripped-back arrangements at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "soft_rock",
+    "genre": "Rock",
+    "sub_style": "Soft Rock",
+    "tempo_range": {"low": 80, "high": 115},
+    "key_range": {"low": "A2", "high": "F4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.3, "high": 0.6},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.1, "high": 0.5}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["warmth", "smooth_delivery", "moderate_dynamics", "legato"],
+    "description": "Melodic rock with smooth vocals and moderate intensity, blending warmth with rhythmic drive",
+    "example_songs": ["Hotel California – Eagles", "Dust in the Wind – Kansas", "光辉岁月 – Beyond"],
+    "explanation_templates": [
+      "Your warm, smooth delivery (warmth: {warmth:.0%}) suits the melodic, easygoing nature of soft rock.",
+      "The balanced dynamics in your voice work well with soft rock's blend of gentleness and drive at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "alternative_rock",
+    "genre": "Rock",
+    "sub_style": "Alternative Rock",
+    "tempo_range": {"low": 100, "high": 145},
+    "key_range": {"low": "G2", "high": "G4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.5},
+      "energy": {"low": 0.5, "high": 0.9},
+      "tension": {"low": 0.4, "high": 0.9}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.2, "high": 0.6},
+      "brightness": {"low": 0.4, "high": 0.8},
+      "breathiness": {"low": 0.0, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.1, "high": 0.5}
+    },
+    "expression_traits": ["grit", "intensity", "dynamic_contrast", "raw_emotion"],
+    "description": "Edgy, guitar-driven rock with raw vocal delivery and emotional intensity",
+    "example_songs": ["Creep – Radiohead", "Boulevard of Broken Dreams – Green Day", "倔强 – 五月天"],
+    "explanation_templates": [
+      "Your raw brightness ({brightness:.0%}) and dynamic contrast give your voice the edge needed for alternative rock.",
+      "The intensity and {mood_label} feel in your delivery match the emotional drive of alternative rock at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "indie_rock",
+    "genre": "Rock",
+    "sub_style": "Indie Rock",
+    "tempo_range": {"low": 105, "high": 140},
+    "key_range": {"low": "A2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.4, "high": 0.7},
+      "tension": {"low": 0.2, "high": 0.6}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.3, "high": 0.6},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.1, "high": 0.5}
+    },
+    "expression_traits": ["natural_tone", "understated_energy", "quirky_phrasing"],
+    "description": "Characterful rock with a DIY aesthetic, valuing personality over technical polish",
+    "example_songs": ["Do I Wanna Know? – Arctic Monkeys", "Somebody That I Used to Know – Gotye", "New Boy – 房东的猫"],
+    "explanation_templates": [
+      "Your natural, characterful tone and mid-range comfort ({pitch_low}–{pitch_high}) fit indie rock's preference for personality over polish.",
+      "The {mood_label} quality in your vocals pairs well with indie rock's understated energy at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "neo_soul",
+    "genre": "R&B",
+    "sub_style": "Neo-Soul",
+    "tempo_range": {"low": 75, "high": 105},
+    "key_range": {"low": "Bb2", "high": "Eb4"},
+    "vocal_difficulty": 4,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.7, "high": 1.0},
+      "brightness": {"low": 0.2, "high": 0.5},
+      "breathiness": {"low": 0.3, "high": 0.7}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.3,
+      "syncopation_range": {"low": 0.3, "high": 0.7}
+    },
+    "expression_traits": ["melisma", "vibrato", "rhythmic_flexibility", "tonal_richness"],
+    "description": "Soulful, groove-oriented music blending jazz harmony with R&B feel, demanding vocal warmth and rhythmic nuance",
+    "example_songs": ["Tyrone – Erykah Badu", "Untitled (How Does It Feel) – D'Angelo", "爱的人是你 – 刘佳"],
+    "explanation_templates": [
+      "Your rich warmth ({warmth:.0%}) and rhythmic flexibility are perfect for neo-soul's laid-back grooves and melismatic phrasing.",
+      "The breathy, soulful quality in your voice (breathiness: {breathiness:.0%}) brings the organic feel neo-soul demands at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "contemporary_rnb",
+    "genre": "R&B",
+    "sub_style": "Contemporary R&B",
+    "tempo_range": {"low": 80, "high": 115},
+    "key_range": {"low": "B2", "high": "F4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.3, "high": 0.6},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.2, "high": 0.7}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.2, "high": 0.6}
+    },
+    "expression_traits": ["runs", "vibrato", "falsetto", "dynamic_control"],
+    "description": "Modern R&B blending smooth melodies with rhythmic grooves, requiring agility and dynamic control",
+    "example_songs": ["Blinding Lights – The Weeknd", "Earned It – The Weeknd", "光年之外 – 邓紫棋"],
+    "explanation_templates": [
+      "Your vocal warmth ({warmth:.0%}) and dynamic control allow smooth transitions between chest and falsetto typical of contemporary R&B.",
+      "The {mood_label} mood in your voice, combined with your range ({pitch_low}–{pitch_high}), makes contemporary R&B a natural fit."
+    ],
+    "active": true
+  },
+  {
+    "id": "singer_songwriter",
+    "genre": "Folk",
+    "sub_style": "Singer-Songwriter",
+    "tempo_range": {"low": 75, "high": 120},
+    "key_range": {"low": "A2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.6},
+      "energy": {"low": 0.1, "high": 0.4},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.2, "high": 0.5},
+      "breathiness": {"low": 0.3, "high": 0.8}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["intimacy", "storytelling", "natural_phrasing", "emotional_honesty"],
+    "description": "Personal, lyric-focused music where vocal intimacy and emotional authenticity matter most",
+    "example_songs": ["Fast Car – Tracy Chapman", "Skinny Love – Bon Iver", "理想三旬 – 陈鸿宇"],
+    "explanation_templates": [
+      "Your intimate, breathy tone (breathiness: {breathiness:.0%}) and natural phrasing are ideal for singer-songwriter material that relies on emotional honesty.",
+      "The warmth in your voice ({warmth:.0%}) carries the storytelling quality that singer-songwriter music demands at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "acoustic_folk",
+    "genre": "Folk",
+    "sub_style": "Acoustic Folk",
+    "tempo_range": {"low": 80, "high": 130},
+    "key_range": {"low": "G2", "high": "D4"},
+    "vocal_difficulty": 1,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.1, "high": 0.3}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.2, "high": 0.6},
+      "breathiness": {"low": 0.1, "high": 0.5}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.2}
+    },
+    "expression_traits": ["natural_tone", "rhythmic_simplicity", "warmth", "clarity"],
+    "description": "Traditional acoustic folk emphasizing clear, unadorned vocals and straightforward melodic lines",
+    "example_songs": ["Blowin' in the Wind – Bob Dylan", "The Sound of Silence – Simon & Garfunkel", "南山南 – 马頔"],
+    "explanation_templates": [
+      "Your clear, warm voice (warmth: {warmth:.0%}) suits folk music's emphasis on unadorned vocal delivery.",
+      "The natural simplicity in your phrasing is a perfect match for acoustic folk at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "vocal_jazz",
+    "genre": "Jazz",
+    "sub_style": "Vocal Jazz",
+    "tempo_range": {"low": 90, "high": 160},
+    "key_range": {"low": "Bb2", "high": "F4"},
+    "vocal_difficulty": 4,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.8},
+      "energy": {"low": 0.3, "high": 0.7},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.3,
+      "syncopation_range": {"low": 0.4, "high": 0.8}
+    },
+    "expression_traits": ["scatting", "swing_feel", "improvisation", "rhythmic_freedom"],
+    "description": "Swing and bebop-influenced jazz vocals requiring rhythmic sophistication and improvisational ability",
+    "example_songs": ["Fly Me to the Moon – Frank Sinatra", "Summertime – Ella Fitzgerald", "夜来香 – 李香兰"],
+    "explanation_templates": [
+      "Your vocal warmth ({warmth:.0%}) and rhythmic flexibility are well-suited for the swinging phrasing of vocal jazz.",
+      "The natural swing feel in your delivery makes you a strong fit for jazz standards at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "bossa_nova",
+    "genre": "Jazz",
+    "sub_style": "Bossa Nova",
+    "tempo_range": {"low": 110, "high": 140},
+    "key_range": {"low": "C3", "high": "E4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.7},
+      "energy": {"low": 0.2, "high": 0.4},
+      "tension": {"low": 0.1, "high": 0.3}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.2, "high": 0.5},
+      "breathiness": {"low": 0.5, "high": 0.9}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.3, "high": 0.6}
+    },
+    "expression_traits": ["breathiness", "gentle_delivery", "rhythmic_subtlety", "intimacy"],
+    "description": "Brazilian-influenced jazz with gentle, breathy vocals delivered with effortless rhythmic subtlety",
+    "example_songs": ["The Girl from Ipanema – Astrud Gilberto", "Corcovado – Stan Getz", "微风往事 – 小娟&山谷里的居民"],
+    "explanation_templates": [
+      "Your breathy, intimate tone (breathiness: {breathiness:.0%}) and gentle delivery are exactly what bossa nova vocals call for.",
+      "The relaxed warmth ({warmth:.0%}) in your voice captures the effortless feel of bossa nova at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "modern_country",
+    "genre": "Country",
+    "sub_style": "Modern Country",
+    "tempo_range": {"low": 90, "high": 135},
+    "key_range": {"low": "A2", "high": "F4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.8},
+      "energy": {"low": 0.4, "high": 0.7},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.4, "high": 0.7},
+      "breathiness": {"low": 0.1, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.6,
+      "syncopation_range": {"low": 0.1, "high": 0.3}
+    },
+    "expression_traits": ["twang", "storytelling", "clear_diction", "emotional_delivery"],
+    "description": "Contemporary country blending traditional storytelling with pop-influenced production and clear, emotive vocals",
+    "example_songs": ["Before He Cheats – Carrie Underwood", "Die a Happy Man – Thomas Rhett", "朋友别哭 – 吕方"],
+    "explanation_templates": [
+      "Your warm, clear voice (warmth: {warmth:.0%}, brightness: {brightness:.0%}) has the storytelling quality modern country demands.",
+      "The emotional clarity in your delivery makes you a natural fit for modern country's narrative style at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "classic_country",
+    "genre": "Country",
+    "sub_style": "Classic Country",
+    "tempo_range": {"low": 80, "high": 120},
+    "key_range": {"low": "G2", "high": "D4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.6},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.6, "high": 1.0},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.1, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.6,
+      "syncopation_range": {"low": 0.0, "high": 0.2}
+    },
+    "expression_traits": ["twang", "vibrato", "storytelling", "sincerity"],
+    "description": "Traditional country with honest, straightforward vocal delivery and strong melodic sensibility",
+    "example_songs": ["Ring of Fire – Johnny Cash", "Jolene – Dolly Parton", "弯弯的月亮 – 刘欢"],
+    "explanation_templates": [
+      "Your warm, sincere voice (warmth: {warmth:.0%}) carries the honest delivery that defines classic country singing.",
+      "The natural vibrato and clear phrasing in your vocals suit classic country's traditional melodic approach at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "chillwave",
+    "genre": "Electronic",
+    "sub_style": "Chillwave",
+    "tempo_range": {"low": 90, "high": 115},
+    "key_range": {"low": "C3", "high": "E4"},
+    "vocal_difficulty": 1,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.1, "high": 0.4},
+      "tension": {"low": 0.0, "high": 0.3}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.2, "high": 0.5},
+      "breathiness": {"low": 0.5, "high": 0.9}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["dreaminess", "soft_delivery", "reverb_friendly", "laid_back"],
+    "description": "Hazy, nostalgic electronic music with soft, reverb-drenched vocals that blend into the texture",
+    "example_songs": ["Midnight City – M83", "Feels Like We Only Go Backwards – Tame Impala", "春风十里 – 鹿先森乐队"],
+    "explanation_templates": [
+      "Your breathy, dreamy delivery (breathiness: {breathiness:.0%}) blends naturally into the hazy texture of chillwave.",
+      "The soft warmth ({warmth:.0%}) and relaxed feel of your voice suit the laid-back mood of chillwave at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "ambient_vocal",
+    "genre": "Electronic",
+    "sub_style": "Ambient Vocal",
+    "tempo_range": {"low": 60, "high": 100},
+    "key_range": {"low": "C3", "high": "D4"},
+    "vocal_difficulty": 1,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.5},
+      "energy": {"low": 0.0, "high": 0.3},
+      "tension": {"low": 0.0, "high": 0.3}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.1, "high": 0.4},
+      "breathiness": {"low": 0.6, "high": 1.0}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.2,
+      "syncopation_range": {"low": 0.0, "high": 0.2}
+    },
+    "expression_traits": ["ethereal", "sustained_tones", "soft_dynamics", "atmospheric"],
+    "description": "Ethereal, atmospheric music where the voice serves as a textural element rather than a lead melody",
+    "example_songs": ["Skinny Love – Bon Iver (re:Stacks version)", "Teardrop – Massive Attack", "匆匆那年 – 王菲"],
+    "explanation_templates": [
+      "Your ethereal breathiness ({breathiness:.0%}) makes your voice an ideal textural element in ambient vocal settings.",
+      "The soft, atmospheric quality of your voice suits ambient vocal music's meditative feel at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "dream_pop",
+    "genre": "Electronic",
+    "sub_style": "Dream Pop",
+    "tempo_range": {"low": 85, "high": 120},
+    "key_range": {"low": "B2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.4, "high": 0.8}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["ethereal", "legato", "soft_delivery", "melodic_simplicity"],
+    "description": "Shimmering, reverb-heavy music with floating vocals that create a dreamlike atmosphere",
+    "example_songs": ["Cherry-Coloured Funk – Cocteau Twins", "Space Song – Beach House", "白月光与朱砂痣 – 大籽"],
+    "explanation_templates": [
+      "Your breathy, warm timbre (warmth: {warmth:.0%}, breathiness: {breathiness:.0%}) creates the floating quality essential to dream pop.",
+      "The soft, legato phrasing in your voice captures dream pop's ethereal atmosphere at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "broadway_show_tunes",
+    "genre": "Musical Theater",
+    "sub_style": "Broadway/Show Tunes",
+    "tempo_range": {"low": 80, "high": 150},
+    "key_range": {"low": "A2", "high": "A4"},
+    "vocal_difficulty": 5,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.9},
+      "energy": {"low": 0.4, "high": 1.0},
+      "tension": {"low": 0.3, "high": 0.8}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.5, "high": 1.0},
+      "breathiness": {"low": 0.0, "high": 0.3}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.6,
+      "syncopation_range": {"low": 0.1, "high": 0.5}
+    },
+    "expression_traits": ["belting", "projection", "diction", "dramatic_dynamics", "character_voice"],
+    "description": "Theatrical vocal performance demanding wide range, clear diction, powerful projection, and dramatic expressiveness",
+    "example_songs": ["Defying Gravity – Wicked", "Memory – Cats", "明天会更好 – 群星"],
+    "explanation_templates": [
+      "Your wide range ({pitch_low}–{pitch_high}) and bright projection (brightness: {brightness:.0%}) give you the theatrical power that Broadway demands.",
+      "The dramatic dynamic control in your voice is perfectly suited for show tunes that shift between tender moments and belted climaxes."
+    ],
+    "active": true
+  },
+  {
+    "id": "cpop_ballad",
+    "genre": "Chinese Pop",
+    "sub_style": "C-Pop Ballad",
+    "tempo_range": {"low": 60, "high": 90},
+    "key_range": {"low": "A2", "high": "F4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.1, "high": 0.4},
+      "energy": {"low": 0.1, "high": 0.4},
+      "tension": {"low": 0.3, "high": 0.7}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.2, "high": 0.7}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.2}
+    },
+    "expression_traits": ["vibrato", "legato", "emotional_peaks", "falsetto_transitions"],
+    "description": "Chinese-language emotional ballads with lyrical melodies, often building to emotive high-note climaxes",
+    "example_songs": ["一路上有你 - 张学友", "遇见 - 孙燕姿", "后来 - 刘若英", "晴天 - 周杰伦"],
+    "explanation_templates": [
+      "Your warm timbre ({warmth:.0%}) and smooth falsetto transitions suit the emotional arc of C-Pop ballads that build to {mood_label} climaxes.",
+      "The legato phrasing and vibrato in your voice pair naturally with the lyrical melodic style of Chinese ballads at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "cpop_dance",
+    "genre": "Chinese Pop",
+    "sub_style": "C-Pop Dance",
+    "tempo_range": {"low": 115, "high": 140},
+    "key_range": {"low": "C3", "high": "G4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.6, "high": 1.0},
+      "energy": {"low": 0.7, "high": 1.0},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.2, "high": 0.5},
+      "brightness": {"low": 0.6, "high": 1.0},
+      "breathiness": {"low": 0.0, "high": 0.3}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.7,
+      "syncopation_range": {"low": 0.2, "high": 0.5}
+    },
+    "expression_traits": ["projection", "rhythmic_precision", "energy", "clean_tone"],
+    "description": "Upbeat Chinese pop with electronic production, requiring energetic delivery and rhythmic precision",
+    "example_songs": ["龙拳 - 周杰伦", "Play我呸 - 蔡依林", "奇妙能力歌 - 陈粒"],
+    "explanation_templates": [
+      "Your bright, energetic delivery (brightness: {brightness:.0%}) cuts through the dense production of C-Pop dance tracks.",
+      "The rhythmic precision and projection in your voice match C-Pop dance's high-energy demands at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "chinese_folk_pop",
+    "genre": "Chinese Pop",
+    "sub_style": "Chinese Folk Pop",
+    "tempo_range": {"low": 75, "high": 120},
+    "key_range": {"low": "A2", "high": "E4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.2, "high": 0.5},
+      "tension": {"low": 0.1, "high": 0.4}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.0, "high": 0.3}
+    },
+    "expression_traits": ["natural_tone", "storytelling", "warmth", "gentle_phrasing"],
+    "description": "Chinese folk-influenced pop music blending traditional sensibility with modern production, valuing warmth and sincerity",
+    "example_songs": ["成都 – 赵雷", "安和桥 – 宋冬野", "斑马，斑马 – 宋冬野", "鸿雁 – 额尔古纳乐队"],
+    "explanation_templates": [
+      "Your warm, natural tone ({warmth:.0%}) and gentle phrasing capture the sincere storytelling quality of Chinese folk pop.",
+      "The {mood_label} warmth in your voice suits the traditional-meets-modern aesthetic of Chinese folk pop at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "melodic_hiphop",
+    "genre": "Hip-Hop",
+    "sub_style": "Melodic Hip-Hop",
+    "tempo_range": {"low": 130, "high": 170},
+    "key_range": {"low": "C3", "high": "D4"},
+    "vocal_difficulty": 2,
+    "mood_affinity": {
+      "valence": {"low": 0.2, "high": 0.6},
+      "energy": {"low": 0.4, "high": 0.8},
+      "tension": {"low": 0.3, "high": 0.7}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.3, "high": 0.7},
+      "brightness": {"low": 0.3, "high": 0.7},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.3, "high": 0.7}
+    },
+    "expression_traits": ["rhythmic_flow", "melodic_hooks", "autotune_friendly", "emotional_delivery"],
+    "description": "Melody-driven hip-hop blending singing and rapping, with catchy hooks and emotional undertones",
+    "example_songs": ["God's Plan – Drake", "Lucid Dreams – Juice WRLD", "说散就散 – 袁娅维"],
+    "explanation_templates": [
+      "Your melodic sensibility and mid-range comfort ({pitch_low}–{pitch_high}) suit the singing-rapping blend of melodic hip-hop.",
+      "The {mood_label} quality and rhythmic flow in your voice fit melodic hip-hop's hook-driven style at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "rnb_rap_fusion",
+    "genre": "Hip-Hop",
+    "sub_style": "R&B-Rap Fusion",
+    "tempo_range": {"low": 80, "high": 120},
+    "key_range": {"low": "B2", "high": "E4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.6},
+      "energy": {"low": 0.3, "high": 0.7},
+      "tension": {"low": 0.2, "high": 0.6}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.4, "high": 0.8},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.3, "high": 0.7}
+    },
+    "expression_traits": ["rhythmic_agility", "smooth_transitions", "melodic_rap", "groove"],
+    "description": "Smooth blend of R&B singing and rhythmic rap delivery, requiring versatile vocal agility",
+    "example_songs": ["Nice For What – Drake", "Best Part – Daniel Caesar", "光年之外 – 邓紫棋"],
+    "explanation_templates": [
+      "Your vocal versatility and rhythmic agility allow smooth transitions between singing and rapping in R&B-rap fusion.",
+      "The warm groove ({warmth:.0%}) in your delivery suits the R&B-rap crossover style at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "classic_soul",
+    "genre": "Soul",
+    "sub_style": "Classic Soul",
+    "tempo_range": {"low": 80, "high": 120},
+    "key_range": {"low": "A2", "high": "F4"},
+    "vocal_difficulty": 4,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.4, "high": 0.8},
+      "tension": {"low": 0.3, "high": 0.7}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.7, "high": 1.0},
+      "brightness": {"low": 0.4, "high": 0.7},
+      "breathiness": {"low": 0.0, "high": 0.3}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.2, "high": 0.5}
+    },
+    "expression_traits": ["belting", "melisma", "vibrato", "call_and_response", "raw_emotion"],
+    "description": "Traditional soul demanding rich vocal warmth, powerful projection, and deeply emotional delivery",
+    "example_songs": ["A Change Is Gonna Come – Sam Cooke", "Respect – Aretha Franklin", "海阔天空 – Beyond"],
+    "explanation_templates": [
+      "Your rich vocal warmth ({warmth:.0%}) and powerful projection carry the emotional weight that classic soul demands.",
+      "The raw emotional intensity and melismatic ability in your voice are hallmarks of great soul singing at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "modern_soul",
+    "genre": "Soul",
+    "sub_style": "Modern Soul",
+    "tempo_range": {"low": 75, "high": 110},
+    "key_range": {"low": "Bb2", "high": "E4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.3, "high": 0.7},
+      "energy": {"low": 0.3, "high": 0.6},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.6, "high": 1.0},
+      "brightness": {"low": 0.3, "high": 0.6},
+      "breathiness": {"low": 0.2, "high": 0.6}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.2, "high": 0.6}
+    },
+    "expression_traits": ["vibrato", "falsetto", "dynamic_control", "groove", "nuance"],
+    "description": "Contemporary soul blending classic warmth with modern production, emphasizing nuance and groove",
+    "example_songs": ["Stay With Me – Sam Smith", "Gravity – John Mayer", "想你的夜 – 关喆"],
+    "explanation_templates": [
+      "Your warm timbre ({warmth:.0%}) and dynamic nuance fit modern soul's blend of classic richness and contemporary polish.",
+      "The subtle groove and falsetto control in your voice suit modern soul's refined emotional delivery at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "vocal_edm",
+    "genre": "Electronic",
+    "sub_style": "Vocal EDM",
+    "tempo_range": {"low": 125, "high": 150},
+    "key_range": {"low": "C3", "high": "G4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.5, "high": 0.9},
+      "energy": {"low": 0.7, "high": 1.0},
+      "tension": {"low": 0.3, "high": 0.6}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.2, "high": 0.5},
+      "brightness": {"low": 0.6, "high": 1.0},
+      "breathiness": {"low": 0.1, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.7,
+      "syncopation_range": {"low": 0.1, "high": 0.4}
+    },
+    "expression_traits": ["projection", "sustain", "clarity", "anthemic_delivery"],
+    "description": "High-energy electronic dance music featuring soaring vocal hooks that cut through heavy production",
+    "example_songs": ["Titanium – David Guetta ft. Sia", "Wake Me Up – Avicii", "Faded – Alan Walker"],
+    "explanation_templates": [
+      "Your bright, projecting voice (brightness: {brightness:.0%}) can cut through the dense layers of EDM production with clarity.",
+      "The anthemic quality and sustain in your voice suit the soaring hooks of vocal EDM at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "latin_pop",
+    "genre": "Pop",
+    "sub_style": "Latin Pop",
+    "tempo_range": {"low": 95, "high": 130},
+    "key_range": {"low": "A2", "high": "F4"},
+    "vocal_difficulty": 3,
+    "mood_affinity": {
+      "valence": {"low": 0.5, "high": 0.9},
+      "energy": {"low": 0.5, "high": 0.8},
+      "tension": {"low": 0.2, "high": 0.5}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.5, "high": 0.9},
+      "brightness": {"low": 0.4, "high": 0.8},
+      "breathiness": {"low": 0.1, "high": 0.4}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.5,
+      "syncopation_range": {"low": 0.3, "high": 0.6}
+    },
+    "expression_traits": ["rhythmic_feel", "warmth", "passion", "melodic_ornamentation"],
+    "description": "Rhythmic, passionate pop with Latin influences demanding warmth, groove, and melodic flair",
+    "example_songs": ["Despacito – Luis Fonsi", "Hips Don't Lie – Shakira", "Havana – Camila Cabello"],
+    "explanation_templates": [
+      "Your warm, rhythmic vocal quality (warmth: {warmth:.0%}) and natural groove suit the passionate delivery of Latin pop.",
+      "The melodic warmth and syncopated feel in your singing align with Latin pop's rhythmic demands at {tempo_low}–{tempo_high} BPM."
+    ],
+    "active": true
+  },
+  {
+    "id": "gospel_influenced",
+    "genre": "Soul",
+    "sub_style": "Gospel-Influenced Pop",
+    "tempo_range": {"low": 70, "high": 120},
+    "key_range": {"low": "A2", "high": "A4"},
+    "vocal_difficulty": 5,
+    "mood_affinity": {
+      "valence": {"low": 0.4, "high": 0.9},
+      "energy": {"low": 0.5, "high": 1.0},
+      "tension": {"low": 0.3, "high": 0.8}
+    },
+    "timbre_affinity": {
+      "warmth": {"low": 0.6, "high": 1.0},
+      "brightness": {"low": 0.5, "high": 0.9},
+      "breathiness": {"low": 0.0, "high": 0.3}
+    },
+    "rhythm_requirements": {
+      "stability_min": 0.4,
+      "syncopation_range": {"low": 0.2, "high": 0.6}
+    },
+    "expression_traits": ["belting", "melisma", "call_and_response", "vibrato", "power"],
+    "description": "Powerful, uplifting vocals rooted in gospel tradition with soaring melisma and dynamic range",
+    "example_songs": ["Listen – Beyonce", "And I Am Telling You – Jennifer Hudson", "天路 – 韩红"],
+    "explanation_templates": [
+      "Your powerful projection and wide range ({pitch_low}–{pitch_high}) deliver the soaring, melismatic style of gospel-influenced music.",
+      "The {mood_label} intensity and warmth ({warmth:.0%}) in your voice carry the uplifting spirit that gospel-influenced pop requires."
+    ],
+    "active": true
+  }
+]
